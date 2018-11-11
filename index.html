@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Street Fighter Challenge</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<head>
+    <title>Street Fighter Challenge</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
 </head>
+
 <body>
 
-	<div class="container">
-		<h1 id="mainTitle">Street Fighter Challenge</h1>
-	</div>
-	<div class="container restart">
-		<div class="row">
-		 <div id="characters">
-		 	<div class='title'>Pick your Character</div>
-		 		<!-- LIGHTSABER SOUND EFFECT -->
-	<audio id="lightSaber" src="assets/sound-effects/lightsaber.wav"></audio>
-		 </div>
-		</div>
-	</div>
+    <div class="container">
+        <h1 id="mainTitle">Street Fighter Challenge</h1>
+    </div>
+    <div class="container restart">
+        <div class="row">
+            <div id="characters">
+                <div class='title'>Pick your Character</div>
+                <!-- HADOUKEN SOUND EFFECT -->
+                <audio id="hadouken" src="assets/sound-effects/.mp3"></audio>
+            </div>
+        </div>
+    </div>
 
-	<!-- Both your character and the enemy -->
-	<div class='container'>
-		<div class='row'>
-			<div class='col-md-5' id="yourCharacter"></div>
-			<div class='col-md-2' id="fightButton"></div>
-			<div class='col-md-5' id="currentEnemy"></div>
-		</div>
-	</div>
+    <!-- Both your character and the enemy -->
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-5' id="yourCharacter"></div>
+            <div class='col-md-2' id="fightButton"></div>
+            <div class='col-md-5' id="currentEnemy"></div>
+        </div>
+    </div>
 
-	<!-- Append remaining enemies here until -->
-	<div class='container'>
-		<div class='row'>
-			<div id='remainingEnemies'></div>
-		</div>
-	</div>
+    <!-- Append remaining enemies here until -->
+    <div class='container'>
+        <div class='row'>
+            <div id='remainingEnemies'></div>
+        </div>
+    </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-  <script src="assets/javascript/game.js"></script>
-  <script src="assets/javascript/sounds.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/sounds.js"></script>
 </body>
 
 </html>
