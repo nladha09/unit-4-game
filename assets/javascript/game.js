@@ -20,28 +20,28 @@ function resetCharacters() {
 			name: 'Obi-Wan Kenobi',
 			health: 120,
 			attack: 8,
-			imageUrl: 'assets/images/obi-wan.jpg',
+			imageUrl: 'assets/images/ryu.gif',
 			enemyAttackBack: 15
 		},
 		'lukeSkywalker': {
 			name: 'Luke Skywalker',
 			health: 100,
 			attack: 14,
-			imageUrl: 'assets/images/luke-skywalker.jpg',
+			imageUrl: 'assets/images/chunLi.gif',
 			enemyAttackBack: 5
 		},
 		'darthSidious': {
 			name: 'Darth Sidious',
 			health: 150,
 			attack: 8,
-			imageUrl: 'assets/images/darth-sidious.png',
+			imageUrl: 'assets/images/blanka.gif',
 			enemyAttackBack: 20
 		},
 		'darthMaul': {
 			name: 'Darth Maul',
 			health: 180,
 			attack: 7,
-			imageUrl: 'assets/images/darth-maul.jpg',
+			imageUrl: 'assets/images/mBison.gif',
 			enemyAttackBack: 25
 		}
 	}
