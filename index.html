@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
-<head>
-    <title>Street Fighter Challenge</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8">
+    <title>Star Wars with jQuery!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- Game Logic -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </head>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-</head>
+  <body>
 
-<body>
+    <div class="main-section-title">Star Wars RPG!</div>
+    <div id="main-game-section">
+      <!-- Where the characters are initially available to be selected. -->
+      <div id="characters-section">
+        <div class="section-title">Select Your Character</div>
+        <div id="character-area"></div>
+      </div>
 
-    <div class="container">
-        <h1 id="mainTitle">Street Fighter Challenge</h1>
-    </div>
-    <div class="container restart">
-        <div class="row">
-            <div id="characters">
-                <div class='title'>Pick your Character</div>
-                <!-- HADOUKEN SOUND EFFECT -->
-                <audio id="hadouken" src="assets/sound-effects/.mp3"></audio>
-            </div>
+      <!-- Section for our selected character. -->
+      <div id="selected-character-section">
+        <div class="section-title">Your Character</div>
+        <!-- Where our selected character will appear. -->
+        <div id="selected-character"></div>
+      </div>
+
+      <!-- Where our enemies available to attack will appear. -->
+      <div id="available-to-attack-section">
+        <div class="section-title">Enemies Available To Attack</div>
+      </div>
+
+      <div class="section-title">Fight Section</div>
+      <div id="fight-section">
+        <button id="attack-button" style="display: none;">Attack</button>
+      </div>
+
+      <div id="action">
+        <div class="character-section">
+          <div class="section-title">Defender</div>
+          <!-- Where our defender will appear. -->
+          <div id="defender"></div>
         </div>
-    </div>
+      </div>
 
-    <!-- Both your character and the enemy -->
-    <div class='container'>
-        <div class='row'>
-            <div class='col-md-5' id="yourCharacter"></div>
-            <div class='col-md-2' id="fightButton"></div>
-            <div class='col-md-5' id="currentEnemy"></div>
-        </div>
     </div>
+    <!-- Area for game messages. -->
+    <div id="game-message"></div>
+    <button id="reset-button" style="display: none;">Reset Game</button>
 
-    <!-- Append remaining enemies here until -->
-    <div class='container'>
-        <div class='row'>
-            <div id='remainingEnemies'></div>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-    <script src="assets/javascript/game.js"></script>
-    <script src="assets/javascript/sounds.js"></script>
-</body>
+  </body>
 
 </html>
