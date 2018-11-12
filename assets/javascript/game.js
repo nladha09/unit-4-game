@@ -16,29 +16,29 @@ function startGame() {
 function resetCharacters() {
 	// resets the character stats to originals.
 	return {
-		'obiWanKenobi': {
-			name: 'Obi-Wan Kenobi',
+		'ryu': {
+			name: 'Ryu',
 			health: 120,
 			attack: 8,
 			imageUrl: 'assets/images/ryu.gif',
 			enemyAttackBack: 15
 		},
-		'lukeSkywalker': {
-			name: 'Luke Skywalker',
+		'chunLi': {
+			name: 'Chun-Li',
 			health: 100,
 			attack: 14,
 			imageUrl: 'assets/images/chunLi.gif',
 			enemyAttackBack: 5
 		},
-		'darthSidious': {
-			name: 'Darth Sidious',
+		'blanka': {
+			name: 'Blanka',
 			health: 150,
 			attack: 8,
 			imageUrl: 'assets/images/blanka.gif',
 			enemyAttackBack: 20
 		},
-		'darthMaul': {
-			name: 'Darth Maul',
+		'mBison': {
+			name: 'M. Bison',
 			health: 180,
 			attack: 7,
 			imageUrl: 'assets/images/mBison.gif',
@@ -88,8 +88,8 @@ function renderCharacters() {
 
 // renders just the opponents (not the character that was just selected)
 function renderOpponents(selectedCharacterKey) {
-	// iterate through oponents object, and render
-	// oponent divs for every key that is NOT the selectedCharacter
+	// iterate through opponents object, and render
+	// opponent divs for every key that is NOT the selectedCharacter
 	var characterKeys = Object.keys(characters)
 	for (var i = 0; i < characterKeys.length; i++) {
 		if (characterKeys[i] !== selectedCharacterKey) {
@@ -103,10 +103,9 @@ function renderOpponents(selectedCharacterKey) {
 	}
 }
 
-/* BUSINESS LOGIC */
 
 /*
-  HOMEWORK INSTRUCTIONS: The player chooses an opponent by clicking on an enemy's picture.
+HOMEWORK INSTRUCTIONS: The player chooses an opponent by clicking on an enemy's picture.
 */
 function enableEnemySelection() {
 	$('.enemy').on('click.enemySelect', function () {
@@ -118,8 +117,8 @@ function enableEnemySelection() {
 		$('#defender').append(this)
 		/*
 		* HOMEWORK INSTRUCTIONS: Once the player selects an opponent,
-		  that enemy is moved to a `defender area`.
-		   The player will now be able to click the `attack` button
+		that enemy is moved to a `defender area`.
+		The player will now be able to click the `attack` button
 		*/
 		$('#attack-button').show()
 		$('.enemy').off('click.enemySelect')
@@ -208,8 +207,8 @@ $(document).ready(function () {
 
 	/*
 	* HOMEWORK INSTRUCTIONS: When the game starts, the player will choose a character
-	 by clicking on the fighter's picture.
-	 The player will fight as that character for the rest of the game.
+	by clicking on the fighter's picture.
+	The player will fight as that character for the rest of the game.
 	*/
 
 	// NOTE: the second argument to the "on" method below means this is a "delegated event" listener
@@ -229,7 +228,7 @@ $(document).ready(function () {
 		$('#selected-character').append(this)
 
 		/*
-		  HOMEWORK INSTRUCTIONS: Enemies should be moved to a different area of the screen.
+		HOMEWORK INSTRUCTIONS: Enemies should be moved to a different area of the screen.
 		*/
 		renderOpponents(selectedKey)
 

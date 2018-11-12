@@ -3,9 +3,14 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Star Wars with jQuery!</title>
+    <title>Street Fighter Challenge!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" type="text/css">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,11 +19,20 @@
     <!-- Game Logic -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
   </head>
-
   <body>
+<!-- added in audio - w/ controls --- messes with RESET BUTTON LOCATION -->
+<audio autoplay
+    id="SF intro"
+    controls
+    src="assets/sounds/Street Fighter II Opening Original Theme.mp3">
+    Your browser does not support the <code>audio</code> element.
+</audio>
 
-    <div class="main-section-title">Star Wars RPG!</div>
-    <div id="main-game-section">
+    <div class="main-section-title">
+
+    </div>
+    
+    <div id="main-game-section" style="position:absolute; top:375px; left:100px;">
       <!-- Where the characters are initially available to be selected. -->
       <div id="characters-section">
         <div class="section-title">Select Your Character</div>
@@ -41,7 +55,6 @@
       <div id="fight-section">
         <button id="attack-button" style="display: none;">Attack</button>
       </div>
-
       <div id="action">
         <div class="character-section">
           <div class="section-title">Defender</div>
