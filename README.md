@@ -1,6 +1,6 @@
 # unit-4-game
 
-## Steet Fighter RPG game
+## Steet Fighter RPG game :video_game:
 A jQuery "War" card game style Street Fighter themed RPG.
 
 ## What I used
